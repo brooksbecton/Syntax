@@ -1,11 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import ShowList from '../components/ShowList';
-import ShowNotes from '../components/ShowNotes';
-import Player from '../components/Player';
 import Meta from '../components/meta';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Page from '../components/Page';
 
 export default class SponsorPage extends React.Component {
@@ -16,6 +10,7 @@ export default class SponsorPage extends React.Component {
   render() {
     return (
       <Page>
+        <Meta show={{title: "Sponsors"}} baseURL="https://syntax.fm/" />
         <div className="wrapper wrapper--text">
           <h1>Syntax Sponsorship</h1>
           <p>
